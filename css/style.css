@@ -143,7 +143,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 15px 0;
-    border: 3px solid rgb(128, 128, 128);
+    border: 3px solid #1d1919;
     
 }
 .card:hover{
@@ -164,6 +164,22 @@ body{
     border: 1px solid black;
     outline: 0;
     background-color: orange;
+}
+/* hide unhide button design */
+.hide-button{
+    display: flex;
+    justify-content: center;
+}
+.hide-button>.hide{
+    width: 180px;
+    height: 55px;
+    background-color: red;
+    border-radius: 20px;
+    border: 1px solid #000;
+    display: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
 }
 /* main style end */
 /* footer style start */
@@ -254,7 +270,7 @@ hr{
     }
     .grid-container{
         grid-template-columns: repeat(1,1fr) ;
-        margin-top: 80px;
+        /* margin-top: 80px; */
     }
     .item-1{
         width: 100%;
@@ -278,6 +294,10 @@ hr{
     }
     .bottom-section ul li a{
         white-space: nowrap;
+    }
+    .hide-button>.hide{
+        display: block;
+        margin-top: 15px;
     }
 }
 /* Tab view media querry */
@@ -305,6 +325,40 @@ hr{
     }
     .bottom-section ul li{
         margin: 0 15px;
+    }
+    .hide-button>.hide{
+        display: block;
+        margin-top: 15px;
+    }
+}
+@media (min-width:993px) and (max-width:1024px){
+    .wrapper{
+        width: 90%;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2,1fr) ;
+    }
+    .item-1{
+        grid-row: 1 / -6;
+        grid-column: 1 /-1;
+        width: 100%;
+    }
+    .button-container{
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    .button-container button{
+        width: 150px;
+        height: 50px;
+    }
+    .bottom-section ul li{
+        margin: 0 15px;
+    }
+    .hide-button>.hide{
+        display: block;
+        margin-top: 15px;
     }
 }
 
