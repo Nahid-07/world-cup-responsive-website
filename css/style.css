@@ -45,7 +45,7 @@ body{
     background-color: #161616;
     border-radius: 30px;
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
     animation: bannerColor 5s ease-in-out infinite;
     animation-play-state: running;
 }
@@ -107,9 +107,6 @@ body{
 .item-1{
     grid-row: 1 / 5;
 }
-.Upcoming:active{
-    background-color: red;
-}
 .button-container{
     background-color: black;
     display: flex;
@@ -125,6 +122,9 @@ body{
     width: 100px;
     height: 30px;
     cursor: pointer;
+}
+.blog-btn{
+    background-color: red;
 }
 .card-text h4{
     margin-bottom: 10px;

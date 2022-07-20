@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
 .wrapper{
     width: 1170px;
     margin: 0 auto;
@@ -12,10 +16,10 @@
 /* header style start */
 .banner{
     width: 100%;
-    background-color: #e5e5e5;
+    background-color: #171717;
     border-radius: 30px;
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .lef-side-text{
     width: 50%;
@@ -36,9 +40,11 @@
 .main-title{
     font-size: 3em;
     font-weight: 700;
+    color: #ddd;
 }
-.subtitle{
+.subtitile{
     font-size: 1.5em;
+    color: #ddd;
 }
 .btn-container{
     width: 70px;
@@ -83,6 +89,9 @@
     width: 100px;
     height: 30px;
     cursor: pointer;
+}
+.upcoming{
+    background-color: red;
 }
 .card-text h4{
     margin-bottom: 10px;
